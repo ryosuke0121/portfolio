@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <?!= HtmlService.createHtmlOutputFromFile('css').getContent(); ?>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <img src="image/logo.png">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="#about">紹介</a></li>
+          <li><a href="#portfolio">ポートフォリオ</a></li>
+          <li><a href="create.html#制作物紹介">制作物紹介</a></li>
+        </ul>
+      </header>
+
+    <!--top-->
+    <div class="top">
+        <h1>ryosuke's Portfolio</h1>
+    </div>
+    <!--about-->
+    <div class="about" id="about">
+        <h2>About</h2>
+        <hr class="blue-line">
+        <img src="image/man.png">
+        <p>
+            江坂キャンパスにいる週1生
+            <br>
+            最近は楽しくしてます
+        </p>
+        <table>
+            <tr>
+                <td>ryosuke</td>
+                <td>藤本凌佑</td>
+            </tr>
+            <tr>
+                <td>所在地</td>
+                <td>大阪府、北摂</td>
+            </tr>
+            <tr>
+                <td>お問い合わせ</td>
+                <td>SlackのDMにお願いします!
+                    <br>
+                    ryosuke(藤本 凌佑 - Ryosuke Fujimoto)
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="create" id="create">
+        <h2>制作物紹介</h2>
+        <hr class="blue-line">
+        <a href="create.html">こちらから</a>
+        <p>私がどんなものを作成してきたのか紹介します！</p>
+    </div>
+        <!--portfolio-->
+        <div class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+            <hr class="blue-line">
+            <div class="card">
+                <a href="https://sites.google.com/n-jr.jp/22njr240400n2022/">ポートフォリオ</a>
+                <h4>N中等部から発行されたアカウント(@n-jr.jp)じゃないと見る事ができません!!!</h4>
+            </div>
+        </div>
+        <!--footer-->
+        <footer>
+            &copy; 2023 ryosuke All rights resered.
+        </footer>
+</body>
+
+</html>
