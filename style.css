@@ -1,0 +1,118 @@
+body {
+    color: #333333;
+    margin: 0;
+    text-align: center;
+  }
+
+  header{
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  header ul{
+    margin: 0;
+  }
+
+    header ul li {
+      display: inline-block;
+      padding: 0 20px;
+    }
+
+    header ul li a {
+        color: #FFFFFF;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+header img{
+    height: 30px;
+}
+
+footer{
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.top{
+    background-image: url(image/top.jpg);
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.top h1{
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+
+.about{
+    background-color: #F6F6F6;
+    padding: 100px;
+}
+
+h2{
+    margin: 0;
+}
+
+hr{
+    margin-bottom: 50px;
+    height: 5px;
+    width: 100px;
+    border: none;
+}
+
+.blue-line{
+    background-color: #7BC3D1;
+}
+
+.about img{
+    width: 200px;
+}
+
+.about table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.skills{
+    background-color: #7BC3D1;
+    padding: 100px;
+}
+
+.white-line{
+    background-color: #FFFFFF;
+}
+
+.box{
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 15%;
+}
+
+.box img{
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.portfolio{
+    background-color: #F6F6F6;
+    padding: 100px;
+    white-space: nowrap;
+}
+
+.card img{
+    border-radius: 5px 5px 0 0;
+    width: 100;
+}
+
+.create{
+    padding: 20px;
+    font-size: 20px;
+}
