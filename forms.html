@@ -1,1 +1,45 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?!= HtmlService.createHtmlOutputFromFile('css').getContent(); ?>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="57x57" href="image/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="image/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="image/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="image/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="image/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="image/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="image/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="image/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="image/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="image/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="image/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="image/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    
+    <body>
+        <!--header-->
+        <header>
+            <img src="image/logo.png">
+            <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create.html">Product</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="forms.html">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="contact" id="contact">
+            <h1>お問合せは以下のフォームからお願いします。</h1>
+            <iframe class="forms" id="forms" src="https://forms.gle/m9CtnEq122U3EqiQ8"></iframe>
+        </div>
+
+    </body>
+</html>
