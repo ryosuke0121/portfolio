@@ -148,3 +148,7 @@ hr{
     width: 50%;
     height: 1000px;
 }
+
+.about{
+    display:inline-block;
+}
