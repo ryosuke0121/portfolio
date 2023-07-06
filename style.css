@@ -1,14 +1,18 @@
 body {
     color: #333333;
     margin: 0;
+    padding: 0;
     text-align: center;
+    overflow: auto;
+    scroll-behavior: smooth;
   }
 
   header{
-    background-color: #333333;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    position: fixed;
   }
 
   header ul{
@@ -21,7 +25,7 @@ body {
     }
 
     header ul li a {
-        color: #FFFFFF;
+        color: #333;
         font-size: 20px;
         text-decoration: none;
       }
@@ -37,7 +41,7 @@ footer{
 }
 
 .top{
-    background-image: url(image/top.jpg);
+    background-image: url(image/top.png);
     background-size: cover;
     padding: 200px 0;
 }
@@ -183,3 +187,16 @@ hr{
     width: 15%;
     height: 20%;
 }
+
+.animated-text {
+    position: relative;
+    animation-name: move-up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes move-up {
+    0% { top: 0; }
+    50% { top: -20px; }
+    100% { top: 0; }
+  }
