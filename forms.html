@@ -32,15 +32,27 @@
         </a>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
             <li><a href="create.html">Product</a></li>
-            <li><a href="blog.html">Blog</a></li>
             <li><a href="forms.html">Contact</a></li>
         </ul>
     </header>
 
     <div class="contact" id="contact">
         <h1>お問合せは以下のフォームからお願いします。</h1>
-        <iframe class="forms" id="forms" src="https://forms.gle/m9CtnEq122U3EqiQ8"></iframe>
+        <form class="contact" action="https://ssgform.com/s/P045MGH26vgm" method="post">
+          <dl>
+            <dt><strong>お名前</strong></dt>
+            <dd><input type="text" name="name" class="name"></dd>
+            <dt><strong>メールアドレス</strong></dt>
+            <dd><input type="email" name="email" class="email"></dd>
+            <dt><strong>お問い合わせ内容</strong></dt>
+            <dd><textarea name="message" class="message"></textarea></dd>
+          </dl>
+          <button type="submit" class="btn">送信</button>
+        </form>
+        <p>※フォームはSSGformを使用して送信されます。</p>
+    
     </div>
 
 </body>
