@@ -2,135 +2,108 @@
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="image/apple-icon-57x57.webp">
-    <link rel="apple-touch-icon" sizes="60x60" href="image/apple-icon-60x60.webp">
-    <link rel="apple-touch-icon" sizes="72x72" href="image/apple-icon-72x72.webp">
-    <link rel="apple-touch-icon" sizes="76x76" href="image/apple-icon-76x76.webp">
-    <link rel="apple-touch-icon" sizes="114x114" href="image/apple-icon-114x114.webp">
-    <link rel="apple-touch-icon" sizes="120x120" href="image/apple-icon-120x120.webp">
-    <link rel="apple-touch-icon" sizes="144x144" href="image/apple-icon-144x144.webp">
-    <link rel="apple-touch-icon" sizes="152x152" href="image/apple-icon-152x152.webp">
-    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-icon-180x180.webp">
-    <link rel="icon" type="image/png" sizes="192x192" href="image/android-icon-192x192.webp">
-    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.webp">
-    <link rel="icon" type="image/png" sizes="96x96" href="image/favicon-96x96.webp">
-    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.webp">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="image/ms-icon-144x144.webp">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8JE1EEFDH"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <meta charset="utf-8">
+  <title>ryosuke - Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="image/favicon.ico">
+  <!--script-->
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!--css-->
+  <link rel="stylesheet" href="css/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8JE1EEFDH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'G-B8JE1EEFDH');
-    </script>
+    gtag('config', 'G-B8JE1EEFDH');
+  </script>
 </head>
 
 <body>
-    <!--header-->
-    <header>
-        <a href="index.html">
-            <img src="image/logo.webp" alt="logo">
-        </a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="create.html">Product</a></li>
-            <li><a href="forms.html">Contact</a></li>
-        </ul>
-    </header>
+  <header id="header">
+    <h1 class="site-title"><a href="index.html"><img src="image/logo.webp" ></a></h1>
+    <nav>
+      <ul id="page-link">
+        <li><a href="#about">About</a></li>
+        <li><a href="#production">Production</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://twitter.com/njrryo0121240" target="_blank">
+            <img class="icon" src="./image/twitter_logo.webp" >
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <!--top-->
-    <div class="top">
-        <h1 class="animated-text">ryosuke's Portfolio</h1>
+  <main>
+    <div id="mainvisual">
+      <picture>
+        <source media="(max-width: 600px)" srcset="image/top-sp.webp">
+        <img src="image/top-pc.webp" >
+      </picture>
     </div>
-    <!--about-->
-    <div class="about" id="about">
-        <h2>Home</h2>
-        <hr class="blue-line">
-        <img src="image/man.webp">
-        <p>
-            江坂キャンパスにいる週1生
-            <br>
-            最近は楽しくしてます
-        </p>
-        <table>
-            <tr>
-                <td>名前</td>
-                <td>ryosuke-藤本凌佑</td>
-            </tr>
-            <tr>
-                <td>所在地</td>
-                <td>大阪府、北摂</td>
-            </tr>
-        </table>
+
+    <section class="area-1" id="about area">
+      <h2 class="sec-title">About</h2>
+      <p id="animation">寝たり、寝たり、コード書いたり、推し活したり、寝たり、
         <br>
-        <a href="about.html">
-            <img src="image/about.webp">
-        </a>
-        <p>詳しくはこちらから!</p>
-    </div>
-    <div class="create" id="create">
-        <h2>制作物紹介</h2>
-        <hr class="blue-line">
-        <a href="create.html">
-            <img src="image/create.webp">
-        </a>
-        <p>私がどんなものを作成してきたのか紹介します！</p>
-    </div>
-    <!--contact-->
-    <div class="contact" id="contact">
-        <h2>お問い合わせ</h2>
-        <hr class="blue-line">
-        <a href="https://forms.gle/m9CtnEq122U3EqiQ8">
-            <img src="image/contact.webp">
-        </a>
-        <p>お問い合わせはこちらからお願いします。</p>
-    </div>
-    <!--footer-->
-    <footer>
-        <div class="footer-common-link" style="display: flex;">
-            <dl>
-                <dt>About</dt>
-                <dd>
-                    <a href="about.html">自己紹介</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>News</dt>
-                <dd>
-                    <a href="news.html">News</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>Product</dt>
-                <dd>
-                    <a href="create.html">制作物紹介</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>Contact</dt>
-                <dd>
-                    <a href="forms.html">お問い合わせ</a>
-                </dd>
-            </dl>
-        </div>
-        &copy; 2023 ryosuke All rights resered.
-    </footer>
-    <script src="script.js"></script>
+        食べたり、通話したり、寝たりしてる普通の学生です。
+      </p>
+    </section>
+
+    <section id="production" class="wrapper area" >
+      <h2 class="sec-title">Production - 制作物</h2>
+      <ul>
+        <li><img src="image/ae-edit.webp"></li>
+        <li><img src="image/ae-play.webp"></li>
+
+        <li><img src="image/pr-edit.webp"></li>
+        <li><img src="image/pr-play.webp"></li>
+
+        <li><img src="image/coin-vscode.webp"></li>
+        <li><img src="image/coin-play.webp"></li>
+      </ul>
+    </section>  
+
+    <section id="news" class="wrapper area">
+      <h2 class="sec-title">News</h2>
+      <dl>
+        <dt>2023.08.05</dt>
+        <dd>サイトをリニューアルしました!</dd>
+      </dl>
+    </section>
+
+    <section id="contact" class="wrapper area">
+      <h2 class="sec-title">Contact</h2>
+      <form action="https://ssgform.com/s/P045MGH26vgm" method="post">
+        <dl>
+          <dt><label for="name">お名前</label></dt>
+          <dd><input type="text" id="name" name="name"></dd>
+          <dt><label for="email">メールアドレス</label></dt>
+          <dd><input type="email" id="email" name="email"></dd>
+          <dt><label for="message">お問い合わせ内容</label></dt>
+          <dd><textarea id="message" name="message"></textarea></dd>
+        </dl>
+        <div class="button"><input type="submit" value="送信"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2023 ryosuke</p>
+  </footer>
+
 </body>
 
 </html>
-
-<!-- creator
-copyright ryosuke 2023 -->
-<!--メモ-->
-<!--https://nureyon.com/square-2?pattern=9
-長方形のやつ
