@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>ryosuke - Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="image/favicon.ico">
+  <!--script-->
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!--css-->
+  <link rel="stylesheet" href="css/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8JE1EEFDH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-B8JE1EEFDH');
+  </script>
+</head>
+
+<body>
+  <header id="header">
+    <h1 class="site-title"><a href="index.html"><img src="image/logo.webp" ></a></h1>
+    <nav>
+      <ul id="page-link">
+        <li><a href="#about">About</a></li>
+        <li><a href="#production">Production</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <br>
+        <li><a href="index.html">JP</a></li>
+        <li><a href="index-en.html">EN</a></li>
+        <li>
+          <a href="https://twitter.com/njrryo0121240" target="_blank">
+            <img class="icon" src="./image/twitter_logo.webp" >
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="mainvisual">
+      <picture>
+        <source media="(max-width: 600px)" srcset="image/top-sp.webp">
+        <img src="image/top-pc.webp" >
+      </picture>
+    </div>
+
+    <section class="area-1" id="about area">
+      <h2 class="sec-title">About</h2>
+      <p id="animation">Sleeping, sleeping, writing code, guessing, sleeping,
+        <br>
+        I am a normal student who eats, calls, and sleeps.
+      </p>
+    </section>
+
+    <section id="production" class="wrapper area" >
+      <h2 class="sec-title" >Production</h2>
+      <ul>
+        <li><img src="image/ae-edit.webp"></li>
+        <li><img src="image/ae-play.webp"></li>
+
+        <li><img src="image/pr-edit.webp"></li>
+        <li><img src="image/pr-play.webp"></li>
+
+        <li><img src="image/coin-vscode.webp"></li>
+        <li><img src="image/coin-play.webp"></li>
+      </ul>
+    </section>  
+
+    <section id="news" class="wrapper area">
+      <h2 class="sec-title">News</h2>
+      <dl>
+        <dt>2023.08.05</dt>
+        <dd>We have renewed our website!</dd>
+      </dl>
+    </section>
+
+    <section id="contact" class="wrapper area">
+      <h2 class="sec-title">Contact</h2>
+      <form action="https://ssgform.com/s/P045MGH26vgm" method="post">
+        <dl>
+          <dt><label for="name">Your Name</label></dt>
+          <dd><input type="text" id="name" name="name"></dd>
+          <dt><label for="email">Email Address</label></dt>
+          <dd><input type="email" id="email" name="email"></dd>
+          <dt><label for="message">Message</label></dt>
+          <dd><textarea id="message" name="message"></textarea></dd>
+        </dl>
+        <div class="button"><input type="submit" value="送信"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>I am Japanese. Translation tools are used to create the English site and may be incomplete. If you find any flaws, please contact me through the Contact link above.</p>
+    <p>&copy; 2023 <a href="index.html"> RYOSUKE </a>All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>
