@@ -54,14 +54,14 @@
 
     <section class="area-1" id="about area">
       <h2 class="sec-title">About</h2>
-      <p id="animation">Sleeping, sleeping, writing code, guessing, sleeping,
+      <p id="animation">寝たり、寝たり、コード書いたり、推し活したり、寝たり、
         <br>
-        I am a normal student who eats, calls, and sleeps.
+        食べたり、通話したり、寝たりしてる普通の学生です。
       </p>
     </section>
 
     <section id="production" class="wrapper area" >
-      <h2 class="sec-title" >Production</h2>
+      <h2 class="sec-title" >Production - 制作物</h2>
       <ul>
         <li><img src="image/ae-edit.webp"></li>
         <li><img src="image/ae-play.webp"></li>
@@ -78,7 +78,11 @@
       <h2 class="sec-title">News</h2>
       <dl>
         <dt>2023.08.05</dt>
-        <dd>We have renewed our website!</dd>
+        <dd>サイトをリニューアルしました!</dd>
+      </dl>
+      <dl>
+        <dt>2023.10.03</dt>
+        <dd>恋人ができました!</dd>
       </dl>
     </section>
 
@@ -86,21 +90,21 @@
       <h2 class="sec-title">Contact</h2>
       <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdt46G3pPU2ldQM6wRB835lOfmfjjXazJCs4C8AHCtFKIW2Dg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
         <dl>
-          <dt><label for="name">Your Name</label></dt>
+          <dt><label for="name">お名前</label></dt>
           <dd><input type="text" id="name" name="entry.897410239"></dd>
-          <dt><label for="email">Email Address</label></dt>
+          <dt><label for="email">メールアドレス</label></dt>
           <dd><input type="email" id="email" name="entry.1521320082"></dd>
-          <dt><label for="message">Message</label></dt>
+          <dt><label for="message">お問い合わせ内容</label></dt>
           <dd><textarea id="message" name="entry.110426293"></textarea></dd>
         </dl>
-        <div class="button"><input type="submit" value="Submit"></div>
+        <div class="button"><input type="submit" value="送信"></div>
       </form>
       <script>
         let submitted = false;
     
         const page_transition = function () {
             if(submitted){
-                window.location = 'thanks-en.html';
+                window.location = 'thanks.html';
             }
         }
     </script>   
@@ -109,7 +113,6 @@
   </main>
 
   <footer id="footer">
-    <p>I am Japanese. Translation tools are used to create the English site and may be incomplete. If you find any flaws, please contact me through the Contact link above.</p>
     <p>&copy; 2023 <a href="index.html"> RYOSUKE </a>All Rights Reserved.</p>
   </footer>
 
